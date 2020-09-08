@@ -51,6 +51,16 @@ function App() {
   }, [correctLetters, wrongLetters, playable]);
   //function only gets called when the above variables are updated
 
+  function playAgain() {
+    setPlayable(true);
+
+    // empty arrays
+    setCorrectLetters([]);
+    setWrongLetters([]);
+
+    const random = Math.floor(Math.random() * words.length);
+    selectedWord = words[random];
+  }
 
   return (
     <>
