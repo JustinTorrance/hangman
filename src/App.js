@@ -23,7 +23,6 @@ function App() {
   const [wrongLetters, setWrongLetters] = useState([])
   const [showNotification, setShowNotification] = useState(false)
 
-
   useEffect(() => {
     const handleKeyDown = event => {
       const {key, keyCode} = event;
